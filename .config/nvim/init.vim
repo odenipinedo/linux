@@ -43,17 +43,16 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 " :PlugClean - to remove plugins from system that have been removed from list
 " :PlugInstall - to install plugins added to this list
 " :UpdateRemotePlugins - update all plugins on this list to latest version
-" 
+"
 "  coc.nvim (Ubuntu 20.04 lts)
 "  https://github.com/nodesource/distributions
 "  > sudo npm install -g yarn
 "  - requires build of plugin located in
-"	~/.local/share/nvim/plugged/ or
+"       ~/.local/share/nvim/plugged/ or
 "   ~/.config/nvim/plugged/
-"  > sudo npm install -g yarn
 "  > yarn install [must be done inside the .../plugged/ directory]
 "  > yarn build
-"  
+"
 "  - install plugins
 " :CocInstall coc-python
 "  > sudo apt install python3-pip
@@ -61,5 +60,6 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 " :CocInstall coc-r-lsp
 "  - install and run R
 "  > install.packages("languageserver")
+" :CocInstall coc-sql
 " :CocInstall coc-snippets
 "  :CocCommand snippets.edit... FOR EACH FILE TYPE

@@ -54,6 +54,8 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 "  > yarn build
 "
 "  - install plugins
+"   :CocInstall coc-actions
+"   :CocInstall coc-markdownlint
 " - :CocInstall coc-markdown-preview-enhanced
 " - :CocCommand markdown-preview-enhanced.openPreview
 " - :CocCommand markdown-preview-enhanced.syncPreview

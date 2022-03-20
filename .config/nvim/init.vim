@@ -54,6 +54,10 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 "  > yarn build
 "
 "  - install plugins
+" - :CocInstall coc-markdown-preview-enhanced
+" - :CocCommand markdown-preview-enhanced.openPreview
+" - :CocCommand markdown-preview-enhanced.syncPreview
+" - :CocList --input=markdown-preview-enhanced. commands
 " :CocInstall coc-python
 "  > sudo apt install python3-pip
 "  > pip3 install jedi

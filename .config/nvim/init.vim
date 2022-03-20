@@ -38,6 +38,13 @@ let g:NERDTreeDirArrowCollapsible="~"
 "setup tab autocomplete for coc.nvim
 inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 
+" Remap for do codeAction of selected region [coc-actions]
+function! s:cocActionsOpenFromSelected(type) abort
+  execute 'CocCommand actions.open ' . a:type
+endfunction
+xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
+nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
+
 " --- Notes ---
 "  vim-plug
 " :PlugClean - to remove plugins from system that have been removed from list

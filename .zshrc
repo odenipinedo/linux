@@ -113,7 +113,7 @@ fi
 # 6  ⇒  steady bar, xterm.
 echo -ne '\e[6 q'
 
-#Qt settings for Wayland
+#Qt settings for wayward Wayland apps (RStudio)
 export QT_QPA_PLATFORM=xcb
 
 # VcXsrv config for WSL
